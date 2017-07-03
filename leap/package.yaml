@@ -1,0 +1,22 @@
+name: leap
+version: 1.0.0.3
+
+dependencies:
+  - base
+ghc-options: -fno-warn-type-defaults
+
+library:
+  exposed-modules: LeapYear
+  source-dirs: src
+  dependencies:
+  ghc-options: -fno-warn-type-defaults
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - leap
+      - hspec
